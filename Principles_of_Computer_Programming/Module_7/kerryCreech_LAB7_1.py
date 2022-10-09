@@ -1,7 +1,11 @@
-def calc(x,y):
-    z = y-x
+"""
+Kerry Creech
+Homework 7 – COP1000 
+Module 7 Functions
+"""
 
-    
+def calc(x,y):
+    z = y-x   
 
 
 
