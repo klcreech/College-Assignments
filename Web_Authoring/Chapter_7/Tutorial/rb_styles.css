@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 7
+   Tutorial Case
+
+   Red Ball Pizza General Style Sheet
+  
+   Filename: rb_styles.css
+
+*/
+
+
+/* HTML and Body styles */
+
+html {
+   background: rgb(246, 174, 176) url(rb_background.png);
+   font-family: Verdana, Geneva, sans-serif;
+   height: 100%;
+}
+
+body {
+   background-color: white;
+   box-shadow: rgb(51, 51, 51) 20px 0px 40px,  rgb(51, 51, 51) -20px 0px 40px,
+               inset rgb(51, 21, 21) 0px 0px 40px;
+   border-left: 3px solid rgb(51, 51, 51);
+   border-right: 3px solid rgb(51, 51, 51);
+   min-height: 100%;  
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1020px;  
+   width: 100%;
+}
+
+
+/* Header styles */
+
+header img#logoimg {
+   width: 100%;
+}
+
+header {
+   background: linear-gradient(to bottom, black 70%, rgb(179, 20, 25));
+   border-bottom: 1px solid rgb(0, 0, 0);
+   color: white;
+}
+
+
+
+/* Navigation list styles */
+
+header nav ul li {
+   font-size: 1.2em; 
+   line-height: 2.3em; 
+   height: 2.3em;
+   padding: 0px 10px;
+}
+
+header nav ul li a {
+   color: white;
+   display: block;
+   width: 100%;
+}
+
+header nav ul li a:hover {
+   color: rgb(249, 209, 17);
+}
+
+a#navicon {
+   display: none;
+}
+
+
+section {
+   margin: 30px 3%;
+}
+
+section h1 {
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+   font-size: 2.5em;
+   color: rgb(179, 20, 25);
+   margin-bottom: 35px;
+}
+
+section p {
+   line-height: 1.4em;
+   margin: 15px 0px;
+}
+
+
+
+/* Footer styles */   
+
+footer {
+   color: white;    
+   background: linear-gradient(to bottom, rgb(179, 20, 25), black);   
+   -moz-column-width: 200px;
+   -webkit-column-width: 200px;
+    column-width: 200px;
+
+   -moz-column-gap: 25px;
+   -webkit-column-gap: 25px;
+    column-gap: 25px;
+    
+    padding: 20px 40px;
+  
+}
+
+footer h1 {
+   color: rgb(255, 241, 147);   
+   font-size: 1em;
+   margin: 10px 0px;
+}
+
+footer h1:first-of-type {
+   margin-top: 0px;
+}
+
+footer a {
+   display: block;
+   color: white;
+   text-decoration: none;
+   font-size: 0.9em;
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
+
+footer address {
+   margin-top: 30px;
+   font-style: normal;
+}
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+
+   
+   a#navicon {
+      display: block;
+   }
+   
+   header nav ul {
+      display: none;
+   }
+   
+   header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+   }
+   
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+   
+   section h1 {
+      font-size: 1.5em;
+   }
+   
+   section p {
+      font-size: 0.9em;
+   }
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+
+   body header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   body header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}
