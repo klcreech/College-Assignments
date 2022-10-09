@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 6
+   Tutorial Case
+
+   DLR General Style Sheet
+  
+   Filename:         dlr_styles.css
+
+*/
+
+
+/* HTML and Body styles */
+
+html {
+   background: url(dlr_back.png), rgb(165, 146, 165);
+   font-family: Verdana, Geneva, sans-serif;
+   height: 100%;
+}
+
+body {
+   background-color: white;
+   box-shadow: rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
+   border-left: 1px solid rgb(153, 0, 153);
+   border-right: 1px solid rgb(153, 0, 153);
+   height: 100%;   
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1200px;   
+   width: 100%;
+}
+
+/* Flex Layout */
+
+body {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: column nowrap;
+   flex-flow: column nowrap;
+}
+
+header, footer {
+   -webkit-flex-shrink: 0;
+   flex-shrink: 0;
+}
+
+div#container {
+   -webkit-flex: 1 0 auto;
+   flex: 1 0 auto;
+}
+
+/* Header styles */
+
+body > header {
+   background-color: rgb(218, 210, 218);
+   border-bottom: 1px solid rgb(153, 0, 153);
+   color: white;
+   padding-bottom: 45px;
+
+}
+
+body > header h1 {
+   background: linear-gradient(to right, rgb(153, 0, 153) 30%, black);
+   color: white;
+   font-size: 1.4em;
+   padding: 5px 0px 5px 12px;
+}
+
+body > header h1 em {
+   font-size: 0.7em;
+}
+
+body > header img#logo {
+   display: block;
+   margin: 0px auto;
+   width: 85%;
+}
+
+/* Navigation list styles */
+
+body > header nav ul li {
+   background-color: rgb(218, 210, 218);
+   font-size: 0.8em;   
+   padding: 0px 10px;
+}
+
+body > header nav ul li a {
+   color: rgb(153, 0, 153);
+   display: block;
+   width: 100%;
+}
+
+body > header nav ul li a:hover {
+   color: white;
+   background-color: rgb(153, 0, 153);
+}
+
+a#navicon {
+   display: none;
+}
+
+/* Container Styles */
+
+div#container {
+   background: rgb(248, 248, 210);
+
+}
+
+/* Article Styles */
+
+div#container header {
+   background: linear-gradient(to right, rgb(153, 0, 153) 30%, black);
+   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+   color: white;
+   padding: 5px 0px 5px 12px;
+}
+
+div#container header h1 {
+   font-size: 2em;
+   letter-spacing: 0.2em;
+   line-height: 1.2em;
+   margin: 15px 0px 15px 0px;
+   font-weight: normal;
+}
+
+div#container header h2 {
+   font-size: 1.2em;
+   margin: 0px 0px 20px 0px; 
+   font-weight: normal;
+}
+
+div#container header p {
+   font-size: 1.1em;
+   margin: 0px 10px 20px 0px;
+}
+
+div#container img#host {
+   float: left;
+   margin: 10px 20px 10px 5px;
+}  
+
+div#container header:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+article {
+   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+   margin: 20px;
+}
+
+article h1 {
+   font-size: 2em;
+   letter-spacing: 0.05em;
+   line-height: 1em;
+   margin-bottom: 20px;
+}
+
+article h2 {
+   font-size: 1.5em;
+   letter-spacing: 0.05em;
+   line-height: 1em;
+   margin-bottom: 10px;
+}
+
+article p {
+   line-height: 1.2em;
+   font-size: 1em;
+   margin: 0px 0px 10px 0px;
+}
+
+article ol {
+   font-size: 1em;
+   line-height: 1.2em;
+   margin: 20px;
+}
+
+article ol li {
+   margin-bottom: 10px;
+}
+
+/* Footer styles */   
+
+footer {
+   color: white;    
+   background: linear-gradient(to right, rgb(153, 0, 153) 30%, black);   
+   font-size: 0.65em;  
+   font-style: normal;
+   height: 30px;
+   line-height: 30px;   
+   text-align: center;
+  
+}
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+ 
+   body > header {
+      padding-bottom: 0px;
+   }
+   
+   img#logo {
+      width: 100%;
+   }
+   
+   a#navicon {
+      display: block;
+   }
+   
+   body > header nav ul {
+      display: none;
+   }
+   
+   body > header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+   }
+   
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+
+
+   body > header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   body > header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}
