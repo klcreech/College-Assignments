@@ -1,3 +1,10 @@
+"""
+Kerry Creech
+Homework 4 – COP1000 
+Module 4 Boolean Logic
+
+"""
+
 Day_Of_Week = int(input("Enter a number between 1 and 7: "))
 
 if Day_Of_Week == 1:
