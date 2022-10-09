@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 2
+   Tutorial Case
+   
+   TSS Layout Styles
+   Filename: tss_layout.css
+
+*/
+
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+}
+
+body > header {
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+body > nav {
+	width: 20%;
+	float: left;
+	margin: 0 0 0 1.5%;
+}
+
+body > article#about_tss {
+	width: 51%;
+	float: left;
+	margin: 0 3% 0 3%;
+}
+
+
+body > aside {
+	width: 20%;
+	float: left;
+	margin: 0 1.5% 0 0;
+}
+
+body > article#about_tss img {
+	float: right;
+	width: 40%;
+	margin: 0px 0 10px 10px;
+}
+
+article.syllabus {
+    float: left;
+	width: 74.5%;
+	margin: 0 4% 0 0%;
+}
+
+
+body > footer {
+	width: 100%;
+	clear: left;
+}
