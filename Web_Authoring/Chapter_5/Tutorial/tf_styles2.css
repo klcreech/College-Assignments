@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 5
+   Tutorial Case  
+   
+   Filename: tf_styles2.css
+   
+   This file contains the typographical and layout styles used in 
+   the Trusted Friends Pre-K Classes page.
+
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+   background: url(tf_back1.png) center center / cover no-repeat fixed;
+   height: 100%;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+
+body {
+   background: rgb(134, 176, 232);   
+   box-shadow: rgb(51, 51, 51) 5px 0px 15px,
+               rgb(51, 51, 51) -5px 0px 15px;
+   margin: 0px auto;
+   min-height: 100%;
+   min-width: 200px;
+   max-width: 1024px;
+   width: 100%;
+}
+
+/* Body Header Styles */
+
+body header {
+   background: rgb(134,176,232);   
+}
+
+body header > img {
+   display: block;
+   width: 100%;
+}
+
+/* Horizonal Navigation Styles */
+
+nav.horizontal {
+   background-color: rgb(117, 140, 72);
+   clear: both;
+}
+
+nav.horizontal li {
+   color: rgb(31, 73, 125);
+   font-size: 1.3em;
+   line-height: 2em;
+   text-transform: uppercase;
+}
+
+nav.horizontal ul li a {
+   display: block;
+   padding-left: 10px;
+}
+
+nav.horizontal ul li a#currentPage {
+   background-color: rgb(31, 73, 125);
+   color: rgb(231, 231, 231);
+}
+
+nav.horizontal ul li a:visited, nav.horizontal ul li a:link {
+   color: rgb(231, 231, 231);
+}
+
+nav.horizontal ul li a:hover, nav.horizontal ul li a:active {
+   background-color: rgb(31, 73, 125);
+   color: rgb(231, 231, 231);
+}
+
+/* Aside Styles */
+
+body aside {
+   background-color: rgb(207, 222, 172);
+}
+
+body aside h1 {
+   background-color: rgb(99, 143, 199);
+   color: ivory;
+   font-size: 1.5em;
+   font-weight: normal;
+   letter-spacing: 0.2em;
+   line-height: 1.5em;
+   text-align: center;
+}
+
+body aside ol {
+   margin: 10px;
+}
+
+body aside li {
+   line-height: 1.8em;
+   margin-top: 10px;
+}
+
+/* Section Styles */
+
+section#main {
+   background: rgb(231, 231, 231);
+}
+
+/* Article Styles */
+
+article#overview {
+   padding: 10px;
+}
+
+article#overview h1 {
+   color: black;
+   font-size: 2em;
+   letter-spacing: 0.2em;
+   line-height: 1em;
+   margin: 10px 0px 20px 0px;
+   padding-left: 12px;
+}
+
+article#overview p {
+   margin: 12px;
+}
+
+section#topics article {
+   border: 1px solid rgb(31, 73, 135);
+   border-radius: 20px;
+   margin: 10px;
+}
+
+section#topics article:nth-of-type(even) {
+   background-color: rgb(207, 222, 172);
+}
+
+section#topics article:nth-of-type(odd) {
+   background-color: rgb(99, 143, 199);
+}
+
+section#topics article h1 {
+   font-size: 1.2em;
+   margin: 5px;
+   text-align: center;
+}
+
+section#topics article p {
+   margin: 8px;
+}
+
+/* Footer Styles */
+
+footer {
+   background-color: rgb(117, 140, 72);
+   font-size: 0.9em;
+   text-align: center;
+   padding: 10px 0px;
+}

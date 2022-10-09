@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 5
+   Tutorial Case
+   
+   Author: Kerry Creech  
+   Date:  2/25/2021   
+   
+   Filename: tf_styles1.css
+   
+   This file contains the layout styles used in the Trusted Friends
+   home page.
+
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+   background: url(tf_back1.png) center center / cover no-repeat fixed;
+   height: 100%;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+
+body {
+   background: rgb(134, 176, 232);   
+   box-shadow: rgb(51, 51, 51) 5px 0px 15px,
+               rgb(51, 51, 51) -5px 0px 15px;
+   margin: 0px auto;
+   min-height: 100%;
+   min-width: 320px;
+   max-width: 1024px;
+   width: 100%;
+}
+
+/* Body Header Styles */
+
+body header {
+   background: rgb(134,176,232);   
+}
+
+body header img {
+   display: block;
+   width: 100%;
+}
+
+/* Horizonal Navigation Styles */
+
+nav.horizontal {
+   background-color: rgb(117, 140, 72);
+   min-height: 2em;
+}
+
+nav.horizontal li {
+   color: rgb(31, 73, 125);
+   display: block;
+   line-height: 2em;
+   text-transform: uppercase;
+}
+
+nav.horizontal a {
+   display: block;
+   font-size: 1em;
+}
+
+nav.horizontal a:visited, nav.horizontal a:link {
+   color: rgb(31, 73, 125);
+}
+
+nav.horizontal a:hover, nav.horizontal a:active {
+   background-color: rgb(31, 73, 125);
+   color: white;
+}
+
+/* Main Menu Styles */
+
+ul.mainmenu {
+   display: block;
+}
+
+ul.mainmenu > li {
+   text-indent: 15px;
+}
+
+ul.mainmenu > li:first-of-type a {
+   color: white;
+   background-color: rgb(31, 73, 125);
+}
+
+/* Submenu Styles */
+
+ul.submenu {
+   width: 100%;
+   background-color: rgb(181, 204, 136);
+}
+
+
+/* Section Styles */
+
+section {
+   background-color: rgb(207, 222, 172);
+   clear: both;
+}
+
+section::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+section img {
+   display: block;
+   width: 100%;
+}
+
+section p {
+   line-height: 1.4em;
+   padding: 10px;
+   font-size: 1.2em;
+}
+
+/* Aside Styles */
+
+aside {
+   display: block;
+   background-color: rgb(181, 204, 136);
+}
+
+/* Footer Styles */
+
+body > footer {
+   background-color: rgb(117, 140, 72);
+   font-size: 0.9em;
+   text-align: center;
+   padding: 10px 0px;
+}
+
+/* Pulldown Menu Styles */
+
+ul.submenu {
+	display:none;
+	}
+	
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+	display:block;
+}
+
+
+
+
+/* New Styles Added Below */
+
+/*=================================
+    Mobile Styles: 0px to 480px
+  =================================
+*/
+@media only screen and (max-width: 480px)  {
+	
+	nav.horizontal a {
+		font-size: 1.5em;
+		line-height: 2.2em;
+	}
+
+	aside {
+		display: none;
+	}
+	
+}
+
+/*=================================
+    Mobile Styles: 481px to greater
+  =================================
+*/
+@media only screen and (min-width: 481px)  {
+	
+		ul.mainmenu > li {
+			float: left;
+			width:  20%;
+			position: relative;
+		}
+		
+		ul.submenu {
+			width: 200%;
+			box-shadow: rgb(51,51,51) 5px 5px 15px;
+			position: absolute;
+		}
+	
+}
+
+/*=================================
+   Desktop Styles: 769px and greater
+  =================================
+*/
+@media only screen and (min-width: 769px)  {
+	
+	ul.submenu {
+		background: transparent;
+		box-shadow: none;
+		display: block;
+		position: relative;
+		width: 100%;
+	}
+	
+	nav.horizontal::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+	
+	nav.horizontal a.submenuTitle {
+		display: none;
+	}
+	
+	article {
+		float: left;
+		margin-right: 5%;
+		width: 55%;
+		}
+		
+	aside {
+		float: left;
+		width: 40%;
+	}
+	
+}
+
