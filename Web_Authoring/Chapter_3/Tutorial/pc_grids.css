@@ -1,0 +1,49 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Tutorial Case
+   
+   Style Sheet for Grids used in the Pandaisia Chocolates website
+   Author: Kerry Creech 
+   Date:  2/1/2021 
+   
+   Filename: pc_grids.css
+
+*/
+
+
+/* Grid Styles for Page Body */
+
+body {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas: "header   header"
+	                     "intro    faq"
+						 "articles faq"
+						 "footer   footer";
+	grid-column-gap: 15px;
+}
+
+body > header {
+	grid-row: 1;
+	grid-column: 1/-1;
+}
+
+body > article {grid-area: intro;}
+body > aside {grid-area: faq;}
+body > section {grid-area: articles;}
+body > footer {grid-area: footer;}
+
+
+/* Grid Styles for Nested Grid */
+
+section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+section > h1 {
+	grid-area: 1/1/2/3;
+}
+

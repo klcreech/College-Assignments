@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: Champagne;
+	src: url(cac_champagne.woff) format('woff'),
+	     url(cac_champagne.ttf) format('ttf');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Tutorial Case
+   
+   Display styles used with the Pandaisia Chocolates
+	infographic page  
+   
+   Filename: pc_styles3.css
+
+*/
+
+/* HTML and Body Styles */
+
+html {
+   background-color: rgb(186, 136, 81);
+}
+
+/* Page Body Styles */
+body {
+   margin-left: auto;
+   margin-right: auto;
+   width: 95%;
+   max-width: 960px;
+   min-width: 640px;
+   background-color: rgb(138, 97, 51);
+   font-family: Verdana, Geneva, Arial, sans-serif;   
+}
+
+/* Page Header Styles */
+body > header > img {
+   display: block;
+   width: 100%;
+}
+
+body > header > nav.horizontalNavigation li {
+   width: 20%;
+}
+
+body > header > h1 {
+   background-color: rgb(131, 97, 45);
+   color: rgb(186, 186, 156);
+   font-family: Champagne, cursive;   
+   font-size: 2em;
+   font-weight: normal;   
+   letter-spacing: 0.1em;   
+   line-height: 2em;
+   text-align: center;
+}
+
+
+/* Horizontal Navigation List Styles */
+
+nav.horizontalNavigation > ul > li {
+   display: block;
+   float: left;
+}
+
+nav.horizontalNavigation a {
+   background-color: rgb(113, 86, 39);
+   display: block;
+   font-family: Champagne, cursive;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: rgb(239, 220, 156);
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: rgb(71, 52, 29);
+} 
+
+/* Footer Styles */
+
+footer {
+   color: rgb(186, 186, 156);
+   background-color: rgb(71, 52, 29);
+   font-size: 0.9em;
+   padding: 10px 0px;
+   text-align: center;
+}
+
+/* Main Styles */
+
+main {
+   background-color: rgb(172, 116, 30);
+   clear: both;
+}
+
+/* Infographic Styles */
+
+div.infobox {
+   font-size: 0.8em;
+}
+
+div.infobox img {
+   display: block;
+   width: 100%;
+}
+
+div.infobox p {
+   color: rgb(239, 220, 156);
+   font-size: 1.2em;	
+   margin: 10px 0px;
+   text-align: center;
+}
+
+/* First Infographic */
+
+div#info1 {
+   width: 25%;
+}
+
+div#info1 p {
+   color: rgb(72, 51, 29);
+}
+
+/* Second Infographic */
+
+div#info2 {
+   width: 25%;
+}
+
+/* Third Infographic */
+
+div#info3 {
+   width: 20%;
+}
+
+div#info3 {
+   background-color: rgb(72, 51, 29);
+}
+
+/* Fourth Infographic */
+
+div#info4 {
+   width: 35%;
+}
+
+div#info4 p {
+   color: rgb(71, 52, 29);
+   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+   font-size: 2em;
+}
+
+/* Fifth Infographic */
+
+div#info5 {
+   width: 40%;
+}
+
+/* Sixth Infographic */
+
+div#info6 {
+   width: 45%;
+}
+
+div#info6 {
+   background-color: rgb(72, 51, 29);
+}
+
+/* Seventh Infographic */
+
+div#info7 {
+   width: 25%;   
+}
+
+div#info7 p {
+   color: rgb(72, 51, 29);
+}
+
+/* Eighth Infographic */
+
+div#info8 {
+   width: 45%;   
+}
+
+
+div#info8 img {
+   float: left;
+   margin-right: 5%;
+   width: 35%;   
+}
+
+div#info8 p {
+   float: left;
+   width: 60%;
+}

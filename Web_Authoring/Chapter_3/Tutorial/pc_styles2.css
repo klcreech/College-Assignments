@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: Champagne;
+	src: url(cac_champagne.woff) format('woff'),
+	     url(cac_champagne.ttf) format('ttf');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Tutorial Case
+   
+   Typography and Color Styles for pc_about.html
+   
+   Filename: pc_about.css
+
+*/
+
+/* HTML and Body Styles */
+
+html {
+   background-color: rgb(186, 136, 81);
+}
+
+/* Page Body Styles */
+body {
+   margin-left: auto;
+   margin-right: auto;
+   width: 95%;
+   max-width: 960px;
+   min-width: 640px;
+   background-color: rgb(138, 97, 51);
+   font-family: Verdana, Geneva, Arial, sans-serif;   
+}
+
+/* Page Header Styles */
+body > header > img {
+   display: block;
+   width: 100%;
+}
+
+body > header > nav.horizontalNavigation li {
+   width: 20%;
+}
+
+
+/* Horizontal Navigation List Styles */
+
+nav.horizontalNavigation > ul > li {
+   display: block;
+   float: left;
+}
+
+nav.horizontalNavigation a {
+   background-color: rgb(113, 86, 39);
+   display: block;
+   font-family: Champagne, cursive;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: rgb(239, 220, 156);
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: rgb(71, 52, 29);
+} 
+
+/* Heading Styles */
+
+h1 {
+   text-indent: 1em;
+}
+
+body > header h1 {
+   font-size: 2.4em;
+   line-height: 2.4em;
+   font-family: Champagne, cursive;
+   letter-spacing: 0.3em;
+   text-align: center;
+   font-weight: normal;
+   color: rgb(234, 229, 211);
+}
+
+body > article > h1, body > section > h1, body > aside > h1, body > section > article > h1 {
+   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+   padding: 0.5em 0;
+}
+
+body > article > h1, body > section > h1, body > aside > h1 {
+   font-size: 1.3em;
+   background-color: rgb(102, 72, 38);
+   color: black;
+}
+
+
+section > article > h1 {
+   font-size: 1.1em;
+}
+
+
+/* Paragraph Styles */
+
+p {
+   margin: 1em;
+   font-size: 0.9em;
+}
+
+/* Left Column Styles */
+
+img {
+   width: 100%;
+   display: block;
+}
+
+
+/* Right Column Styles */
+
+aside {
+   background-color: rgb(123, 89, 49);
+   padding-bottom: 2em;
+}
+
+
+aside > h1 {
+   text-align: center;
+   background-color: rgb(31, 31, 31);
+   color: rgb(201, 201, 201);
+}
+
+dl {
+   font-size: 0.9em;
+}
+
+dl > dt {
+   color: black;
+   margin: 1em;
+   font-family: cursive;
+}
+
+dl > dd {
+   margin: 0 1em 0 1em;
+   color: rgb(189, 170, 96);
+   font-family: cursive;
+}
+
+/* Footer Styles */
+
+footer {
+   color: rgb(186, 186, 156);
+   background-color: rgb(71, 52, 29);
+   font-size: 0.9em;
+   padding: 1em 0;
+   text-align: center;
+}

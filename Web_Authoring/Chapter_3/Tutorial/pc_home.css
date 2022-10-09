@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Tutorial Case
+   
+   Style Sheet for the Layout of the Pandaisia Chocolates Home Page
+   Author: Kerry Creech
+   Date:   2/1/2021
+   
+   Filename: pc_home.css
+
+*/
+
+/* Body Styles */
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	min-width: 640px;
+	width: 95%;	
+}
+
+
+
+/* Body Header Styles */
+
+body > header > img {
+	display: block;
+	width:100%;
+}
+
+body > header > nav.horizontalNavigation li {
+	width: 20%;
+}
+
+
+/* Horizontal Navigation Styles */
+
+nav.horizontalNavigation li {
+	display: block;
+	float: left;
+}
+
+nav.horizontalNavigation a {
+	display: block;
+	text-align: center;
+}
+
+
+
+/* Left Column Styles */
+
+section#leftColumn {
+	clear: left;
+	float: left;
+	padding: 1.5em;
+	width: 33%;
+}
+
+
+
+
+/* Right Column Styles */
+
+section#rightColumn {
+	float: left;
+	width: 67%;
+}
+
+section#rightColumn img {
+	display: block;
+	width: 100%;
+}
+
+section#rightColumn > nav.horizontalNavigation li {
+	width: 25%;
+}
+
+
+
+
+
+/* Footer Styles */
+
+footer {
+	background-color: rgb(71, 52, 29);
+	clear: left;
+}
+
+footer > nav.verticalNavigation {
+	float: left;
+	width: 22%;
+}
+
+footer > section#contactInfo {
+	float: left;
+	width: 34%;
+}
+
+footer::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+
+
