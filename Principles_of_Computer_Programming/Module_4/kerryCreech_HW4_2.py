@@ -1,4 +1,10 @@
 '''
+
+Kerry Creech
+Homework 4 – COP1000 
+Module 4 Boolean Logic
+
+
 Write a program that displays the Roman numeral
 version of a decimal number entered. The program
 should prompt the user to enter a number from 1 to 10.
