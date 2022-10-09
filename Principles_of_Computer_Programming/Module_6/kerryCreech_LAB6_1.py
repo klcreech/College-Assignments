@@ -1,3 +1,9 @@
+"""
+Kerry Creech
+Homework 6 – COP1000 
+Module 6 List, Dictionaries, Tuples
+
+"""
 
 totList = []
 
