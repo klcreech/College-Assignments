@@ -1,3 +1,9 @@
+"""
+Kerry Creech
+Homework 5 – COP1000 
+Module 5 Repetition Structures
+
+"""
 # Print Number 1 - 10 and its aquare
 
 sqr = 0
