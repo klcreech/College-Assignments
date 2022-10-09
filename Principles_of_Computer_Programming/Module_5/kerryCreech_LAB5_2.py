@@ -1,3 +1,9 @@
+"""
+Kerry Creech
+Homework 5 – COP1000 
+Module 5 Repetition Structures
+
+"""
 # create budget, add expenses, see if over budget
 budget = input("Enter your budget number: ")
 expsum = 0.0
