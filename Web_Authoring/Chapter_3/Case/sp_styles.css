@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Case Problem 1
+   
+   Typographical styles for Slate and Pencil Tutoring
+   
+   Filename: sp_styles.css
+
+*/
+
+/* Window and Body Styles */
+html {
+   background-color: rgb(230, 182, 144);
+}
+
+body {
+   background-color: rgb(250, 238, 218);
+   font-family: Verdana, Geneva, Arial, sans-serif; 
+}
+
+
+
+/* Page Header Styles */
+
+nav.vertical {
+   background-color: rgb(61, 138, 216);
+   line-height: 2.5em;
+}
+
+
+nav.vertical a {
+   font-size: 1em;
+   margin: 0.4em 0;
+   padding: 5px;
+}
+
+nav.vertical a:link, body > nav.vertical:visited {
+   color: rgb(250, 238, 218);
+}
+
+nav.vertical a:hover, nav.vertical:active {
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* Horizontal Navigation List Styles */
+
+nav.horizontal ul li {
+   background-color: rgb(18, 31, 102);  
+   font-size: 0.9em;
+   padding: 10px 0;
+   text-align: center;     
+}
+
+nav.horizontal a:link, nav.horizontal a:visited {
+   color: rgb(250, 238, 218);
+}
+
+nav.horizontal a:hover, nav.horizontal a:active {
+   color: rgb(255, 255, 64);
+}
+
+
+/* Topics Styles */
+
+section {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+
+section p {
+   color: rgb(95, 114, 232);
+   font-size: 0.8em;
+}
+
+
+
+/* Customer Comment Styles */
+
+
+aside p {
+   font-size: 0.9em;
+   color: rgb(121, 121, 121);
+   line-height: 1.2em;
+}
+
+/* Footer Styles */
+
+footer {
+   color: rgb(186, 186, 156);
+   background-color: rgb(44, 91, 169);
+   font-size: 0.9em;
+   padding: 10px 0px;
+   text-align: center;
+}
