@@ -1,3 +1,9 @@
+"""
+Kerry Creech
+Homework 4 – COP1000 
+Module 4 Boolean Logic
+
+"""
 
 Rec_Length_1 = int(input("Enter length of Rectangle 1: "))
 Rec_Width_1 = int(input("Enter width of Rectangle 1: "))
