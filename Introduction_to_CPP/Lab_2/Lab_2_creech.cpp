@@ -5,18 +5,11 @@
 using namespace std;
 
 
-
 int main()
 
 {
-
-
-
-
-		cout << "Change of Plans:\t";
-	    return 0; // return a zero indicating success!
-
-
+   cout << "Change of Plans:\t";
+   return 0; // return a zero indicating success!
 
 
 }
