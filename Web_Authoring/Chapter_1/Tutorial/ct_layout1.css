@@ -1,0 +1,141 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 1
+   Tutorial Case
+   Filename: ct_layout1.css
+
+   This file contains the layout styles used in the ct_start.html page.
+
+*/
+
+/* =============================================
+	Base layout styles used by mobile devices
+	up to 480px and cascaded to larger devices 
+	unless superceded by other styles.
+   =============================================
+*/
+
+html {
+	height: 100%;
+}
+img, object, embed, video {
+	max-width: 100%;
+}
+header {
+	margin-bottom: 10px;
+	width: 96%;
+}
+
+header img {
+	width: 100%;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 81.9%;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	clear: none;
+	float: none;
+	min-height: 100%;
+}
+nav a {
+	clear: both;
+	margin-left: 0;
+	width: 96%;
+	float: left;
+	display: block;
+	height: 50px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+nav a:last-of-type {
+	margin-bottom: 30px;
+}
+
+nav a img {
+	display: block;
+	width: 100%;
+}
+
+footer {
+	width: 96%;
+	clear: left;
+	text-align: center;
+	font-size: 0.45em;
+	margin-top: 30px;
+	border-top: 2px solid rgba(128,98,26,1.00);
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+
+/* =============================================
+	Tablet layout styles used by devices
+	481px to 768px and cascaded to larger 
+	devices.
+   =============================================
+*/
+
+@media only screen and (min-width: 481px) {
+body {
+	width: 91.14%;
+	padding-left: 0.93%;
+	padding-right: 0.93%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+nav a {
+	width: 32%;
+	height: auto;
+	float: left;
+	clear: none;
+	overflow: visible;
+	margin-bottom: 0px;
+}
+nav a img {
+ width: 100%;
+ height: 100%;
+}
+
+nav a:nth-of-type(4) {
+	clear: left
+}
+
+footer {
+	font-size: 0.8em;
+}
+}
+
+/* =============================================
+	Desktop layout styles used by  devices
+	769px and larger.
+   =============================================
+*/
+
+@media only screen and (min-width: 769px) {
+html {
+	background-color: rgba(176,124,48,1.00);
+	margin: 0px auto;
+}
+body {
+	width: 100%;
+	max-width: 800px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+	background-color: white;
+	-moz-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px
+}
+footer {
+	font-size: 1.2em;
+}
+}
