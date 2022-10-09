@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 4
+   Tutorial Case
+   
+   Layout and Typographical Style Sheet for Tree and Book Family Home Page   
+   
+   Filename: tb_styles.css
+
+*/
+
+/* HTML Styles */
+
+html {
+   background-color: rgb(175, 207, 167);  
+   color: rgb(51, 51, 51);
+   font-size: 12px;
+}
+
+
+/* Page Body Styles */
+
+body {
+   background-color: rgb(211, 211, 211);
+   font-family: Verdana, Geneva, Arial, sans-serif; 	
+   margin-left: auto;
+   margin-right: auto;
+   width: 960px;
+}
+
+
+/* Body Header Styles */
+
+body > header > img {
+	display: block;
+	width: 100%;
+}
+
+body > header > nav#topLinks {
+	background-color: rgb(51, 52, 45);
+	color: white;
+	line-height: 1.7em;
+	text-align: right;
+	padding: 5px 10px 5px 0px;
+}
+
+
+nav#topLinks a:link, nav#topLinks a:visited {
+	color: white;
+}
+
+nav#topLinks a:hover, nav#topLinks a:active {
+	color: rgb(248, 237, 212);
+}
+
+nav#mainLinks ul li {
+	background-color: rgb(53, 98, 42);	
+	display: block;
+	float: left;
+	text-align: center;
+	width: 20%;	
+}
+
+nav#mainLinks ul li a {
+	color: white;	
+	display: block;
+	height: 2.5em;	
+	text-align: center;
+	line-height: 2.5em;	
+}
+
+nav#mainLinks a:link, nav#mainLinks a:visited {
+	color: white;
+}
+
+nav#mainLinks a:hover, nav#mainLinks a:active {
+	background-color: rgb(51, 51, 45);
+}
+
+
+/* Article  Styles */
+article {	
+   clear: both;			   
+   padding: 30px 20px 10px 20px;
+}
+
+article header {
+	margin: 20px auto;	
+	width: 70%;
+}
+
+article header h1 {
+	color: rgb(98, 160, 82);	
+	font-family: Baskerville, "Palatino Linotype", Palatino, 
+	             "Century Schoolbook", "Times New Roman", serif;
+	font-size: 3em;
+	text-align: center;
+}
+
+article::after {
+   clear: both;	
+   content: "";
+   display: table;
+}
+
+
+/* Section Styles */
+
+section#leftColumn {
+	float: left;	
+	margin-left: 15%;
+	margin-right: 4%;
+	width: 40%; 	
+}
+
+section#leftColumn p {
+	font-size: 1.2em;
+	line-height: 1.4em;	
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+
+/* Aside Styles */
+
+aside {
+	background-color: rgba(175, 207, 167, 0.6);
+	float: left;
+	margin-right: 15%;
+	padding: 20px;
+	width: 26%;	 
+}
+
+aside h1 {
+	color: rgb(45, 93, 62);	
+	font-weight: normal;
+	font-size: 2em;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+aside li {
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+aside li.newGroup {
+	margin-top: 15px;
+}
+
+nav#familyLinks a {
+	color: rgb(51, 51, 51);
+	text-decoration: underline;
+}
+
+
+/* Footer Styles */
+
+footer {
+	background-color: rgb(53, 98, 42);
+	color: white;	
+	display: block;
+	padding: 25px;
+}
+
+body > footer > nav.vertical, body > footer > section {
+	float: left;
+	width: 25%;	
+}
+
+body > footer > nav.vertical > ul {
+	line-height: 2em;
+}
+
+footer nav a {
+	text-decoration: underline;
+}
+
+footer a:visited, footer a:link {
+	color: white;
+}
+
+footer a:hover, footer a:active {
+	color: white;
+}
+
+footer::after {
+   clear: both;	
+   content: "";
+   display: table;
+}
+
