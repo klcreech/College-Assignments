@@ -4,8 +4,5 @@
  <h3>Chapter 3 - Processing Data</h3> 
  <h3>Chapter 4 - Making Decisions</h3> 
  <h3>Chapter 5 - Loops, Files and Random Numbers</h3>
- <h3>Chapter 6 - Functions</h3>
- <h3>Chapter 7 - Arrays</h3>
- <h3>Chapter 8 - Search and Sorting Arrays</h3>
- <h3>Chapter 9 - Pointers</h3>
- <h3>Chapter 10 - Characters, C-Strings, and More About the String Class</h3>
+ <h3>Chapter 6 - Modularizing Your Code with Methods</h3>
+
