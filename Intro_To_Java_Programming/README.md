@@ -9,6 +9,6 @@
  <h3>Chapter 8 - Multidimensional Arrays</h3>
  <h3>Chapter 9 - Objects and Classes</h3>
  <h3>Chapter 10 - Object-Oriented Thinking</h3>
- <h3>Chapter 11 - Exception Handling and Text I/O</h3>
- <h3>Chapter 12 - Abstract Classes and Interfaces</h3>
+ <h3>Chapter 11 - Inheritance and Polymorphism</h3>
+ <h3>Chapter 12 - Exception and I/O Handling</h3>
  
