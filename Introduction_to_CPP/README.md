@@ -9,5 +9,4 @@
  <h3>Chapter 8 - Search and Sorting Arrays</h3>
  <h3>Chapter 9 - Pointers</h3>
  <h3>Chapter 10 - Characters, C-Strings, and More About the String Class</h3>
- <h3>Chapter 11 - Strucutred Data</h3>
- <h3>Chapter 12 - Advanced File Operations</h3>
+
